@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0em;
+    padding: 0em;
+}
+
+.form-container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.container {
+    padding: 1.5em;
+}
+
+form {
+    border: 2px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 1em 1.1em;
+    margin: .5em 0;
+    display: inline-block;
+    border: 1px splid #c1c1c1;
+    box-sizing: border-box;
+}
+
+button {
+    color: white;
+    background-color: #04aa6d;
+    margin: .5em 0;
+    padding: 1.25em 1.5em;
+    border: none;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: .8em 1em;
+    background-color: #f44339;
+}
+
+.img {
+    text-align: center;
+}
+
+img.avatar {
+    border-radius: 50%;
+}
+
+span.password {
+    float: right;
+    padding-top: 1em;
+}
+
+/* break point */
+
+@media  screen and (max-width: 680px) {
+    span.password {
+        display: block;
+        float: none;
+    }
+
+    .cancelbtn {
+        width: 100%;
+    }
+    .form-container {
+        width: 100%;
+    }
+}

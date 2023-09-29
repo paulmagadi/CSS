@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: aliceblue;
+    padding: 0rem;
+    margin: 0rem;
+    width: 100%;
+}
+
+.content-container {
+    background-color: blanchedalmond;
+    padding: 10px;
+    width: 50%;
+    margin: 8px 0px 0px 2%;
+    font-size: 100%; /*16px*/
+}
+
+ul {
+    font-size: 1.2em;    /*120% of 16px*  have a cascading effect though */
+}
+
+/* use rem  (Root em) */
+
+ol {
+    font-size: 1.2rem;
+}

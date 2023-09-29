@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #188d8d;
+    --tet-color: #000000;
+    --background-color: #d3d3d3;
+    --white: #ffffff;
+    --dark: #696868;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--background-color);
+}
+
+.container {
+    width: 100%;
+}
+
+header {
+    background-color: var(--main-color);
+    margin-left: 12em;
+}
+
+.flex-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aside {
+    background-color: var(--main-color);
+    color: var(--white);
+    padding: .5em;
+}
+
+.main {
+    flex: 4;
+    padding: 0 .5em;
+    margin-left: 12em;
+}
+
+.side-left {
+    flex-direction: column;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    width: 12em;
+    top: 0;
+}
+
+.side-right {
+    flex: 15%;
+}
+
+
+.side-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.side-menu a {
+    text-decoration: none;
+    color: var(--white);
+    padding: .25em;
+    margin: .5em 0;
+    border: 2px solid var(--white);
+    border-radius: 5px;
+}
+
+.side-menu a:hover,
+.side-menu a:focus {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    background-color: var(--background-color);
+}
+
+
+
+
+/* breakpoint */
+@media (max-width: 698px) {
+    .flex-body {
+        flex-direction: column;
+    }
+}
+

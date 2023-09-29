@@ -1,0 +1,40 @@
+/*############  ############*/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 95%;
+    background-color: #f9f9f9;
+    padding: 1em 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.logo-container {
+margin-left: 1em;
+}
+
+.navigation-links ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.navigation-links li {
+    margin-left: 2em;
+}
