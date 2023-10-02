@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        background-color: bisque;
+        padding: 0px;
+        margin: 0px;
+    }
+    .calculator{
+        min-width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    button{
+        width: 90px;
+        height: 50px;
+        border: wheat;
+        box-shadow: 2px 0px 2px 0px black;
+    }
+    .equal{
+        height: 100px;
+    }
+</style>
+</head>
+<body>
+    <div class="calculator">
+        <div class="text">
+            <input type="text" id="text" readonly>
+        </div>
+        <div class="buttons">
+            <button>C</button>
+            <button>/</button>
+            <button>*</button>
+            <button>X</button>
+        </div>
+        <div class="buttons">
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>-</button>
+        </div>
+        <div class="buttons">
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>+</button>
+        </div>
+        <span class="buttons row4">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <span><button class="equal" >=</button></span>
+        </span>
+        <span>
+            <button>%</button>
+            <button>0</button>
+            <button>.</button>
+        </span>
+    </div>
+</body>
+</html>
+        
