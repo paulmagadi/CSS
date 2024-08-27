@@ -20,23 +20,21 @@
                 <th>Country</th>
                 <th colspan="2" id="mid">Action</th>
             </thead>
-            {% for x in mem %}
             <tr>
                 <td>{{x.id}}</td>
                 <td>{{x.firstname}}</td>
                 <td>{{x.lastname}}</td>
                 <td>{{x.country}}</td>
                 <td>
-                    <a href="update/{{x.id}}"><button id="up">update</button></a>
+                    <a href="update.html"><button id="up">update</button></a>
                 </td>
                 <td>
-                    <a href="delete/{{x.id}}"><button id="del">delete</button></a>
+                    <a href=""><button id="del">delete</button></a>
                 </td>
             </tr>
-            {% endfor %}
         </table>
         <br><br>
-        <a href="{% url 'add' %}"><button id="new3">Add Member</button></a>
+        <a href="add.html"><button id="new3">Add Member</button></a>
     </div>
 </body>
 
